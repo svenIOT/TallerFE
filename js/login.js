@@ -11,8 +11,12 @@ $(document).ready(function(){
                 contentType: 'application/json',
                 data: JSON.stringify({username:username,password:password}),
                 success: function(data, status){
-                    alert("Data: " + data + "\nStatus: " + status);
-                    window.location.replace("/Taller/views/welcome.html");
+                    //alert("Data: " + data + "\nStatus: " + status);
+                    if(data){ 
+                        window.location.replace("/Taller/views/welcome.html");
+                    } else {
+                        $("#error").css("display","block");
+                    }
               }
             })
         }
