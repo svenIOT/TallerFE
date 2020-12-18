@@ -25,6 +25,7 @@ $(document).ready(function(){
     });
 });
 
+//Función para volver a login
 function logout(){
 	window.location.replace("/Taller/views/login.html");
 }
