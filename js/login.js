@@ -8,14 +8,14 @@ $(document).ready(function(){
                 url: 'https://localhost:5001/login',
                 dataType: 'json',
                 type: 'post',
-                crossDomain: true,
+                crossDomain: false,
                 contentType: 'application/json',
                 data: JSON.stringify({Username:username, Password:password}),
                 success: function(data){
                     if(data){ 
-                        window.location.replace("/html/welcome.html");
+                        window.location.replace("welcome.html");
                     } else {
-                        $("#error").show() //.css("display", "block");
+                        $("#error").show()
                     }
               }
             })

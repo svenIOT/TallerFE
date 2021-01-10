@@ -5,7 +5,6 @@ $(document).ready(function(){
         url: 'https://localhost:5001/user',
         dataType: 'json',
 		type: 'get',
-		crossDomain: true,
         contentType: 'application/json',
         success: function(data){
             //Por cada elemento dentro del array data, construye una fila (tr)
@@ -23,5 +22,5 @@ $(document).ready(function(){
 
 //Función para volver a login
 function logout(){
-	window.location.replace("/html/login.html");
+	window.location.replace("/html/index.html");
 }
