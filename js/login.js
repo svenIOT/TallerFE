@@ -13,7 +13,7 @@ $(document).ready(function(){
                 data: JSON.stringify({Username:username, Password:password}),
                 success: function(data){
                     if(data){ 
-                        window.location.replace("welcome.html");
+                        window.location.replace("/html/welcome.html");
                     } else {
                         $("#error").show()
                     }
