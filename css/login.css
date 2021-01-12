@@ -265,7 +265,3 @@ html {
   #error{
     display:none;
   }
-  
-/*
-  dotnet ef dbcontext scaffold "Host=localhost;Port=3306;Database=concesionariodb;Username=testuser;Password=testuser" Pomelo.EntityFrameworkCore.MySql --force --context "TallerContext" --output-dir "Entities" --verbose
-  */
