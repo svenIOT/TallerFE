@@ -13,7 +13,9 @@ $(document).ready(function () {
 			$.each(data, function (i, item) {
 				totalSales.push(parseInt(item.precio));
 				let tr = $('<tr>').append(
+					$('<td>').text(item.nombreVendedor),
 					$('<td>').text(item.numBastidor),
+					$('<td>').text(item.tipoVehiculo),
 					$('<td>').text(item.fechaValidez),
 					$('<td>').text(item.precio)
 				);
