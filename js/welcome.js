@@ -17,13 +17,14 @@ $(document).ready(function () {
 					$('<td>').text(item.numBastidor),
 					$('<td>').text(item.tipoVehiculo),
 					$('<td>').text(item.fechaValidez),
-					$('<td>').text(item.precio)
+					$('<td>').text(item.precio),
+					$('<td>').text(item.totalVendido)
 				);
 				$('#results').append(tr);
 			});
 			// Gráficos
 			let ctx = $("#myChart");
-			let myChart = new Chart(ctx, {
+			new Chart(ctx, {
 				type: 'bar',
 				data: {
 					labels: ["Total vendidos"],
