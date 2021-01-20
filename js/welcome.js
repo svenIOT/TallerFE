@@ -23,7 +23,7 @@ $(document).ready(function () {
 					$('<td>').text(item.nombreVendedor),
 					$('<td>').text(item.numBastidor),
 					$('<td>').text(item.tipoVehiculo),
-					$('<td>').text(item.fechaValidez),
+					$('<td>').text(item.fechaValidez.substring(0, 10)),
 					$('<td>').text(item.precio),
 					$('<td>').text(item.totalVendido)
 				);
@@ -55,7 +55,7 @@ $(document).ready(function () {
 			let mychart2 = new Chart(ctx2, {
 				type: 'bar',
 				data: {
-					labels: ["Total vendidos"],
+					labels: ["Total vendido"],
 					datasets: [{
 						label: 'Ventas (€)',
 						data: [totalSales.reduce((a, b) => a + b)],
